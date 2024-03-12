@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #fff;
+  --color-lightGray: #efefef;
+  --color-darkGray: #4e4f50;
+  --color-darkblue: #0e436b;
+  --color-green: green;
+
+  --transition: transform 0.3s;
+  --box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+  ;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.max-theme-width {
+  width: 80%;
+  margin: auto;
+}
+
+.sec-pedding {
+  padding: 70px 0;
+}
+
+.heading {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.para {
+  color: var(--color-darkGray);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.para2 {
+  color: #d2d2d2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cus-btns {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgb(44 187 99 / 20%) 0 -25px 18px -14px inset, rgb(44 187 99 / 15%) 0 1px 2px, rgb(44 187 99 / 15%) 0 2px 4px, rgb(44 187 99 / 15%) 0 4px 8px, rgb(44 187 99 / 15%) 0 8px 16px, rgb(44 187 99 / 15%) 0 16px 32px;
+  color: var(--color-green);
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+}
+
+.cus-btns:hover {
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  color: var(--color-green);
+}
+
+/* -- header --  */
+
+header,
+main {
+  width: 100vw;
+}
+
+header {
+  transition: background-color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  z-index: 1;
+}
+
+.home-item i {
+  color: var(--color-lightGray);
+  font-size: 30px;
+}
+
+.navbar-toggler {
+  border: 1px solid var(--color-lightGray);
+}
+
+.navbar-toggler-icon {
+  color: var(--color-lightGray);
+}
+
+header nav {
+  width: 100%;
+  min-height: 75px;
+  padding: 0 80px;
+}
+
+header nav li {
+  display: inline;
+  top: 50%;
+  padding-right: 2rem;
+}
+
+header nav li a {
+  color: var(--color-lightGray) !important;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+header nav li a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-white);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+header nav li a:hover:after {
+  transform: scaleX(1);
+}
+
+header.inverted {
+  background-color: var(--color-white);
+  box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
+}
+
+header.inverted .navbar-toggler {
+  border: 1px solid var(--color-darkblue);
+}
+
+header.inverted a {
+  color: var(--color-darkblue) !important;
+  position: relative;
+}
+
+header.inverted a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-darkblue);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+header.inverted a:hover:after {
+  transform: scaleX(1);
+}
+
+/* -- end header --  */
+
+/* -- start footer -- */
+.footer {
+  background: #25272a;
+}
+
+.footer .footer-haeding {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer .nav-item {
+  transition: var(--transition);
+}
+
+.footer .nav-item:hover {
+  transform: translateX(10px);
+}
+
+.footer .nav-link {
+  color: #d2d2d2;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+
+.footer .nav-link:hover {
+  color: var(--color-green);
+}
+
+.footer .follow p {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer .follow p i {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.footer .follow p i:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* -- copyright -- */
+.copyright {
+  background: #13171b;
+  padding: 10px;
+}
+
+.copyright p {
+  color: var(--color-lightGray);
+  text-align: center;
+}
+
+/* -- end footer -- */
+
+/* -- go to top btn -- */
+.fixed-arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+}
+
+
+/* =====================================================================
+----------------------------- MEDIA QUERY ---------------------------
+===================================================================== */
+
+@media only screen and (max-width: 770px) {}
+
+@media only screen and (max-width: 500px) {
+  .max-theme-width {
+    width: 90%;
+  }
+
+  .navbar {
+    background: #00000030;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
+
+  .slick-prev {
+    left: -18px;
+  }
+
+  .slick-next {
+    right: -12px;
+  }
+}

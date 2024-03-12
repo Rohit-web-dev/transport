@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport</title>
+  <!-- -- Bootstrap --  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- -- icon --  -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- -- slick --  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+  <!-- -- css --  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/header-footer/logo.png" alt="" width="100" />
+      </a>
+      <a href="index.html" class="home-nav">
+        <div class="home-item"><i class="fal fa-home-lg-alt"></i></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fad fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" style="margin-left:auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">contact us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">offers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- </div> -->
+  <main>
+    <section class="jumbotron" id="goTop">
+      <div class="banner">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 col-12 my-3">
+            <h4 class="banner-heading">Book vehical from anywhere to your destination in low price</h4>
+          </div>
+          <div class="col-md-6 col-12 my-3">
+            <div class="banner-form">
+              <h4>Find express logistic vehicle near by you at best prices</h4>
+              <form>
+                <div class="mb-3">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>City</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Pickup Address">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Dropoff Address">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Mobile Number">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="mb-3">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Choose vehicles</option>
+                    <option value="1">Auto</option>
+                    <option value="2">Truck</option>
+                    <option value="3">Jambo truck</option>
+                  </select>
+                </div>
+                <button type="submit" class="cus-btns mx-auto d-flex">Get Estimation</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- -- start 3 card section --  -->
+  <div class="three-card sec-pedding">
+    <h4 class="heading mb-5 text-center">our services</h4>
+    <div class="max-theme-width">
+      <!-- slick -->
+      <div class="slick-car" id="slick-slider-1">
+        <div class="img-div">
+          <div class="card-div">
+            <div class="cards">
+              <div class="card-img">
+                <img src="./assets/images/services/service1.jpg" alt="">
+              </div>
+              <div class="cards-body">
+                <h4>Choose your pick up & drop location within the city</h4>
+                <p class="para mb-1">Download the partner app on</p>
+                <div class="p-app mb-2">
+                  <a href="">
+                    <img src="./assets/images/services/app1.png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="./assets/images/services/app2.png" alt="">
+                  </a>
+                </div>
+                <div class="show-more">
+                  <a href="#">Read more..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-div">
+          <div class="cards">
+            <div class="card-img">
+              <img src="./assets/images/services/service2.jpg" alt="">
+            </div>
+            <div class="cards-body">
+              <h4>hoose vehicle of your device</h4>
+              <p class="para">Get best qoute based on the vehicle selected by user & get vehicle instantly without any
+                waiting</p>
+              <div class="show-more">
+                <a href="#">Read more..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-div">
+          <div class="cards">
+            <div class="card-img">
+              <img src="./assets/images/services/service3.jpg" alt="">
+            </div>
+            <div class="cards-body">
+              <h4>Track your vehicle in real time</h4>
+              <p class="para">We will ensure that our partner will transfered your goods safely and on time to the
+                destination. You can monitor trin</p>
+              <div class="show-more">
+                <a href="#">Read more..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-div">
+          <div class="cards">
+            <div class="card-img">
+              <img src="./assets/images/services/service2.jpg" alt="">
+            </div>
+            <div class="cards-body">
+              <h4>hoose vehicle of your device</h4>
+              <p class="para">Get best qoute based on the vehicle selected by user & get vehicle instantly without any
+                waiting</p>
+              <div class="show-more">
+                <a href="#">Read more..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -- end 3 card section --  -->
+
+  <!-- -- start business solution --  -->
+  <div class="business-solution sec-pedding">
+    <div class="max-theme-width">
+      <h4 class="heading mb-4 text-center">Delivery modes</h4>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6 col-12 my-3">
+          <div class="cards">
+            <h5 class="">Online</h5>
+            <p class="green-para">Online truck booking that has made transportation of materials a safe, quick and
+              hassle-free affair! The latest advances in technology and easy access to the internet have made it
+              possible for everyone to get the advantage of booking trucks online </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 my-3">
+          <div class="cards">
+            <h5 class="">Offline</h5>
+            <p class="green-para">Different technologies have been deployed to assist and manage transportation. Many
+              concentrated efforts in academia and industry point to a paradigm shift in intelligent transportation
+              systems. Transportation faces many issues like high accidents rate in general, and much more rate in
+              developing countries due to the lack of proper infrastructure for roads, is one of the reasons for these
+              crashes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row d-flex align-items-center">
+        <div class="col-lg-6 col-md-12 col-12 my-3">
+          <h5>Professional</h5>
+          <h4 class="heading mb-4">Express Logistic Business Solutions</h4>
+          <p class="para mb-5">This platform provide many option for B2b business to earn more while you deliver. it
+            offer
+            the most efficient and time bound logistic services for businesses. With our huge fleet of vehicles we take
+            care of your peak business requirements and bulk booking challenges. Clients also benefit from significant
+            cost savings and improved SLA.</p>
+          <a href="#" class="cus-btns">Contact us</a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <!-- -- end business solution --  -->
+
+  <!-- -- start our offer --  -->
+  <div class="our-offer sec-pedding">
+    <div class="max-theme-width">
+      <h5 class="text-center">Offers</h5>
+      <h4 class="heading mb-4 text-center">What we offer</h4>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+          <div class="drop" style="--color: #ff0f5b">
+            <div class="content">
+              <h2><i class="fas fa-check-circle"></i></h2>
+              <p class="para para-over">Hassle free truck rental</p>
+              <a href="#" class="cus-btns">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+          <div class="drop" style="--color: #ff0f5b">
+            <div class="content">
+              <h2><i class="far fa-clipboard-list"></i></h2>
+              <p class="para para-over">Resonable pricing & door step pick up</p>
+              <a href="#" class="cus-btns">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+          <div class="drop" style="--color: #ff0f5b">
+            <div class="content">
+              <h2><i class="fas fa-map-marker-alt"></i></h2>
+              <p class="para para-over">Live traking</p>
+              <a href="#" class="cus-btns">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+          <div class="drop" style="--color: #ff0f5b">
+            <div class="content">
+              <h2><i class="fas fa-truck"></i></h2>
+              <p class="para para-over">Safe & reliable trucks</p>
+              <a href="#" class="cus-btns">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="view-all"><a href="#">View All Offers</a></div> -->
+    </div>
+  </div>
+  <!-- -- end our offer --  -->
+
+  <!-- -- start Professional --  -->
+  <div class="professional sec-pedding mb-5">
+    <div class="max-theme-width">
+      <h5 class="text-center">Professional Services</h5>
+      <div class="professional-heading">
+        <h4>HAVE ANY QUESTIONS ABOUT OUR SERVICES?</h4>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <a href="#" class="cus-btns">Contact us</a>
+      </div>
+    </div>
+  </div>
+  <!-- -- end Professional --  -->
+
+  <!-- -- start Safe & Secure --  -->
+  <div class="max-theme-width px-3">
+    <!-- <div class="safe-secure">
+      <h4 class="heading mb-3 mt-2 text-center">Quality and impact</h4>
+      <div class="row px-2">
+        <div class="col-md-6 col-12 my-3">
+          <div class="logo">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h4>Safe & Secure Delivery</h4>
+          <h5>Lorem ipsum dolor sit amet consectetur</h5>
+          <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dolor magni
+            exercitationem itaque numquam inventore corrupti vero laborum sapiente voluptate!</p>
+          <p class="para">Client:<b> John Doe</b></p>
+        </div>
+        <div class="col-md-6 col-12 my-3">
+          <div class="logo">
+            <i class="far fa-truck"></i>
+          </div>
+          <h4>International Transport</h4>
+          <h5>Lorem ipsum dolor sit amet consectetur</h5>
+          <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dolor magni
+            exercitationem itaque numquam inventore corrupti vero laborum sapiente voluptate!</p>
+          <p class="para">Client:<b> John Doe</b></p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <!-- -- end Safe & Secure --  -->
+
+  <!-- -- start customers  --  -->
+  <!-- <div class="customers sec-pedding">
+    <div class="max-theme-width">
+      <h4 class="heading mb-4">We’re dedicated to customers and focused on quality</h4>
+      <p class="para mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing sed tortor rutrum, aliquam<br>
+        mauris ac, sollicitudin elit tincidunt non auctor vitae.</p>
+      <a href="#" class="cus-btns mx-auto">Request Free Quote</a>
+    </div>
+  </div> -->
+  <!-- -- end customers  --  -->
+
+  <!-- -- start footer  --  -->
+  <div class="footer sec-pedding">
+    <div class="max-theme-width">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+          <h4 class="footer-haeding">About Company</h4>
+          <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, consequatur porro. Temporibus
+            cumque asperiores consequatur quas voluptates? Adipisci, modi temporibus.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+          <h4 class="footer-haeding">navigation</h4>
+          <div class="navigation">
+            <ul>
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">contact us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">offers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+          <h4 class="footer-haeding">navigation</h4>
+          <div class="navigation">
+            <ul>
+              <li class="nav-item"><a class="nav-link" href="#">privacy policy</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">terms & condition</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 my-3">
+          <h4 class="footer-haeding">Follow us</h4>
+          <div class="follow">
+            <p class="para2">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-twitter"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p class="mb-0">@2022- Express Logistics transportation. All right reserved</p>
+  </div>
+  <!-- -- end footer  --  -->
+
+  <!-- -- go to top btn --  -->
+  <a href="#goTop" class="cus-btns fixed-arrow"><i class="fas fa-arrow-up"></i></a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- -- slick --  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
